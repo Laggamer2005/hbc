@@ -1032,7 +1032,7 @@ class Brlyt(object):
 				atom.Flags2 = object.Flags2
 				atom.Material = object.Material
 				atom.unk = object.Unk
-				atom.MaterialCoords = sum(map(list,object.MaterialCoords),[])
+				atom.MaterialCoords = sum(map(list,object.MaterialCoords),())
 			data = atom.pack()
 			
 			if len(object.Children) > 0:
